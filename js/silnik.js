@@ -59,7 +59,9 @@ class Silnik {
 			zmianaPoziomu: (p) => {
 				this.obecnyMario = {
 					zycia: this.dane.obiekty.mario.zycia,
-					monety: this.dane.obiekty.mario.monety
+					monety: this.dane.obiekty.mario.monety,
+					mozeNiszczyc: this.dane.obiekty.mario.mozeNiszczyc,
+					mozeStrzelac: this.dane.obiekty.mario.mozeStrzelac,
 				};
 				switch(p) {
 					case "LVL_1":
@@ -71,6 +73,8 @@ class Silnik {
 				}
 				this.dane.obiekty.mario.zycia = this.obecnyMario.zycia;
 				this.dane.obiekty.mario.monety = this.obecnyMario.monety;
+				this.dane.obiekty.mario.mozeNiszczyc = this.obecnyMario.mozeNiszczyc;
+				this.dane.obiekty.mario.mozeStrzelac = this.obecnyMario.mozeStrzelac;
 			}
 		}
 
