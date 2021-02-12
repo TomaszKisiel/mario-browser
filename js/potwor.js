@@ -1,15 +1,15 @@
 class Potwor {
 	constructor(img, x, y, w, h) {
-		this.obraz = new Obraz(img, 3408, 96, 16, 16);
+		this.obraz = new Obraz(img, 0, 96, 16, 16);
 		this.animacja = {
 			poruszanie: {
-				klatka: [new Obraz(img, 3408, 96, 16, 16),
-							new Obraz(img, 3424, 96, 16, 16),
-							new Obraz(img, 3440, 96, 16, 16),
-							new Obraz(img, 3456, 96, 16, 16)],
+				klatka: [new Obraz(img, 0, 96, 16, 16),
+							new Obraz(img, 16, 96, 16, 16),
+							new Obraz(img, 32, 96, 16, 16),
+							new Obraz(img, 48, 96, 16, 16)],
 				obecnaKlatka: 0
 			},
-			skok: new Obraz(img, 3408, 96, 16, 16)
+			skok: new Obraz(img, 0, 96, 16, 16)
 		};
 		this.stan = {
 			poruszanie: {

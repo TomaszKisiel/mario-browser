@@ -1,12 +1,12 @@
 class Moneta {
 	constructor(img, x, y, w, h) {
-		this.obraz = new Obraz(img, 3408, 112, 16, 16);
+		this.obraz = new Obraz(img, 0, 112, 16, 16);
 		this.animacja = {
 			obrot: {
-				klatka: [new Obraz(img, 3408, 112, 16, 16),
-								new Obraz(img, 3424, 112, 16, 16),
-								new Obraz(img, 3440, 112, 16, 16),
-								new Obraz(img, 3456, 112, 16, 16)],
+				klatka: [new Obraz(img, 0, 112, 16, 16),
+								new Obraz(img, 16, 112, 16, 16),
+								new Obraz(img, 32, 112, 16, 16),
+								new Obraz(img, 48, 112, 16, 16)],
 				obecnaKlatka: 0
 			}
 		};

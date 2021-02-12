@@ -8,8 +8,8 @@ class Poruszanie {
 		this.fragmentCegiel(dane);
 		this.bloczekGrzybow(dane);
 		this.grzyb(dane);
-    this.pocisk(dane);
-    this.flaga(dane);
+		this.pocisk(dane);
+		this.flaga(dane);
 	}
 
 	mario(dane) {
@@ -58,13 +58,13 @@ class Poruszanie {
 		});
 	}
 
-  pocisk(dane) {
-    dane.obiekty.tabelaPociskow.forEach((p) => {
+	pocisk(dane) {
+		dane.obiekty.tabelaPociskow.forEach((p) => {
 			p.obecnyStan.ruch(dane);
 		});
-  }
+	}
 
-  flaga(dane) {
-    dane.obiekty.maszt.flaga.obecnyStan.ruch(dane);
-  }
+	flaga(dane) {
+		dane.obiekty.maszt.flaga.obecnyStan.ruch(dane);
+	}
 }

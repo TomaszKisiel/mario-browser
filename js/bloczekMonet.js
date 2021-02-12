@@ -1,9 +1,9 @@
 class BloczekMonet {
 	constructor(img, x,y,w,h) {
-		this.obraz = new Obraz(img, 3408, 128, 16, 16);
+		this.obraz = new Obraz(img, 0, 128, 16, 16);
 		this.animacja = {
-			pelny: new Obraz(img, 3408, 128, 16, 16),
-			pusty: new Obraz(img, 3424, 128, 16, 16)
+			pelny: new Obraz(img, 0, 128, 16, 16),
+			pusty: new Obraz(img, 16, 128, 16, 16)
 		};
 		this.stan = {
 			drganie: {

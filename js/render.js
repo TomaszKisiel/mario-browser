@@ -12,8 +12,8 @@ class Render {
 
 		if(dane.obiekty.mario.zycia<1) this.pisz("Game Over", dane.canvas.fgCtx, 200, 300, "72px", "PixelEmulator");
 
-    this.rysuj(dane.obiekty.maszt, dane.canvas.fgCtx);
-    this.rysuj(dane.obiekty.maszt.flaga, dane.canvas.fgCtx);
+		this.rysuj(dane.obiekty.maszt, dane.canvas.fgCtx);
+		this.rysuj(dane.obiekty.maszt.flaga, dane.canvas.fgCtx);
 
 		dane.obiekty.tabelaPotworow.forEach((p) => {
 			this.rysuj(p, dane.canvas.fgCtx);
@@ -48,7 +48,7 @@ class Render {
 			this.rysuj(bg, dane.canvas.fgCtx);
 		});
 
-    dane.obiekty.tabelaPociskow.forEach((p) => {
+		dane.obiekty.tabelaPociskow.forEach((p) => {
 			this.rysuj(p, dane.canvas.fgCtx);
 		});
 
@@ -57,9 +57,9 @@ class Render {
 
 	rysuj(co, gdzie) {
 		gdzie.drawImage(co.obraz.img,
-									co.obraz.x, co.obraz.y,
-									co.obraz.w, co.obraz.h,
-									co.x, co.y, co.w, co.h);
+						co.obraz.x, co.obraz.y,
+						co.obraz.w, co.obraz.h,
+						co.x, co.y, co.w, co.h);
 	}
 
 	pisz(tekst, gdzie, x, y, rozmiar, czcionka) {

@@ -1,13 +1,13 @@
 class Grzyb {
 	constructor(img, x, y, w, h, r) {
 		if(r == "zycie") {
-			this.obraz = new Obraz(img, 3424, 144, 16, 16);
+			this.obraz = new Obraz(img, 16, 144, 16, 16);
 			this.pedX = 2;
 		} else if(r == "powiekszenie") {
-			this.obraz = new Obraz(img, 3408, 144, 16, 16);
+			this.obraz = new Obraz(img, 0, 144, 16, 16);
 			this.pedX = 2;
 		} else if(r == "strzelanie") {
-			this.obraz = new Obraz(img, 3440, 144, 16, 16);
+			this.obraz = new Obraz(img, 32, 144, 16, 16);
 			this.pedX = 0;
 		}
 		this.stan = {

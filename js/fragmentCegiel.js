@@ -1,19 +1,19 @@
 class FragmentCegiel {
 	constructor(img, x, y, w, h, n) {
 		if(n == 0) {
-			this.obraz = new Obraz(img, 3408, 160, 8, 8);
+			this.obraz = new Obraz(img, 0, 160, 8, 8);
 			this.pedX = -2;
 			this.pedY = -5;
 		} else if(n == 1) {
-			this.obraz = new Obraz(img, 3416, 160, 8, 8);
+			this.obraz = new Obraz(img, 8, 160, 8, 8);
 			this.pedX = 2;
 			this.pedY = -5;
 		} else if(n == 2) {
-			this.obraz = new Obraz(img, 3408, 168, 8, 8);
+			this.obraz = new Obraz(img, 0, 168, 8, 8);
 			this.pedX = -3;
 			this.pedY = 0;
 		} else {
-			this.obraz = new Obraz(img, 3416, 168, 8, 8);
+			this.obraz = new Obraz(img, 8, 168, 8, 8);
 			this.pedX = 3;
 			this.pedY = 0;
 		}

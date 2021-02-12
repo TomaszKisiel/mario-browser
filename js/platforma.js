@@ -1,6 +1,6 @@
 class Platforma {
 	constructor(img, x, y, w, h, z) {
-		this.obraz = new Obraz(img, 3408, 192, 48, 8);
+		this.obraz = new Obraz(img, 0, 192, 48, 8);
 		this.stan = {
 			poruszanie: {
 				ruch: (dane) => {
