@@ -1,26 +1,26 @@
 class Mario {
   constructor(img, x, y, w, h) {
-    this.obraz= new Obraz(img, 1056, 208, 16, 16);
+    this.obraz= new Obraz(img,3504,64,16,16);
     this.animacja = {
       poruszaniePrawo: {
-        klatka: [new Obraz(img,976,208,16,16),
-        new Obraz(img,960,208,16,16),
-        new Obraz(img,976,208,16,16),
-        new Obraz(img,992,208,16,16)],
+        klatka: [new Obraz(img,3424,64,16,16),
+        new Obraz(img,3408,64,16,16),
+        new Obraz(img,3424,64,16,16),
+        new Obraz(img,3440,64,16,16)],
         obecnaKlatka: 0
       },
       poruszanieLewo: {
-        klatka: [new Obraz(img,976,224,16,16),
-        new Obraz(img,960,224,16,16),
-        new Obraz(img,976,224,16,16),
-        new Obraz(img,992,224,16,16)],
+        klatka: [new Obraz(img,3424,80,16,16),
+        new Obraz(img,3408,80,16,16),
+        new Obraz(img,3424,80,16,16),
+        new Obraz(img,3440,80,16,16)],
         obecnaKlatka: 0
       },
-      staniePrawo: new Obraz(img,1056,208,16,16),
-      stanieLewo: new Obraz(img,1056,224,16,16),
-      skokPrawo: new Obraz(img,1024,208,16,16),
-      skokLewo: new Obraz(img,1024,224,16,16),
-      smierc: new Obraz(img, 1040, 208, 16, 16)
+      staniePrawo: new Obraz(img,3504,64,16,16),
+      stanieLewo: new Obraz(img,3504,80,16,16),
+      skokPrawo: new Obraz(img,3472,64,16,16),
+      skokLewo: new Obraz(img,3472,80,16,16),
+      smierc: new Obraz(img, 3488, 64, 16, 16)
     };
     this.stan = {
       stanie: {
@@ -113,6 +113,10 @@ class Mario {
       }
       for( var i = 0; i<dane.obiekty.tabelaMonet.length; i++) {
         dane.obiekty.tabelaMonet[i].x -= this.pedX;
+      }
+      for( var i = 0; i<dane.obiekty.tabelaBloczkowMonet.length; i++) {
+        dane.obiekty.tabelaBloczkowMonet[i].moneta.x -= this.pedX;
+        dane.obiekty.tabelaBloczkowMonet[i].x -= this.pedX;
       }
     }
   }
