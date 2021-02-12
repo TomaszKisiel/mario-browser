@@ -33,11 +33,13 @@ class Obiekty {
                   [3792,480],[3840,480],[3888,480],[3936,480],[3984,480],[4032,480],[4080,480],[4128,480],
                   [4176,480],[4224,480],[4272,480]];
 
-    let bloczkiMonet = [[528, 336],[624,336]];
+    let bloczkiMonet = [[624,336]];
 
     let platformy = [[4320,576,{min: 4320, max:4800}],[4800,384,{min: 4320, max:4800}]];
 
     let bloczkiCegiel = [[480,336],[576,336],[672,336]];
+
+    let bloczkiGrzybow = [[528,336,"zycie"],[432,288,"powiekszenie"],[720,288,"strzelanie"]];
 
 		dane.obiekty = {};
 		dane.obiekty.niebo = niebo;
@@ -50,6 +52,8 @@ class Obiekty {
     dane.obiekty.tabelaPlatform = [];
     dane.obiekty.tabelaBloczkowCegiel = [];
     dane.obiekty.tabelaFragmentowCegiel = [];
+    dane.obiekty.tabelaBloczkowGrzybow = [];
+    dane.obiekty.tabelaGrzybow = [];
 
 		sciany.forEach(function(z) {
 			dane.obiekty.tabelaScian.push(new Sciana(z[0],z[1],z[2],z[3]));
@@ -73,6 +77,10 @@ class Obiekty {
 
     bloczkiCegiel.forEach(function(bc) {
 			dane.obiekty.tabelaBloczkowCegiel.push(new BloczekCegiel(dane.grafika, bc[0], bc[1], 48, 48));
+		});
+
+    bloczkiGrzybow.forEach(function(bg) {
+			dane.obiekty.tabelaBloczkowGrzybow.push(new BloczekGrzybow(dane.grafika, bg[0], bg[1], 48, 48, bg[2]));
 		});
   }
 }

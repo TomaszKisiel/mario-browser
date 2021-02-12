@@ -128,6 +128,12 @@ class Mario {
       for( var i = 0; i<dane.obiekty.tabelaFragmentowCegiel.length; i++) {
         dane.obiekty.tabelaFragmentowCegiel[i].x -= this.pedX;
       }
+      for( var i = 0; i<dane.obiekty.tabelaBloczkowGrzybow.length; i++) {
+        dane.obiekty.tabelaBloczkowGrzybow[i].x -= this.pedX;
+      }
+      for( var i = 0; i<dane.obiekty.tabelaGrzybow.length; i++) {
+        dane.obiekty.tabelaGrzybow[i].x -= this.pedX;
+      }
     }
   }
 }
